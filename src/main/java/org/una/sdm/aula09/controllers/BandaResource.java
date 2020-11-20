@@ -44,6 +44,7 @@ public class BandaResource {
     public @ResponseBody
     HttpEntity<Banda> create(@RequestBody Banda banda) {
 
+        System.out.println("Salvando banda: " + banda);
         banda = bandaService.create(banda);
         return ResponseEntity.ok(banda);
     }

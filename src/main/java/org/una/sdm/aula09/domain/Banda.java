@@ -72,9 +72,10 @@ public class Banda implements Serializable {
     @Override
     public String toString() {
         return "Banda{" +
-                "nome='" + nome + '\'' +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
                 ", anoDeFormacao=" + anoDeFormacao +
-                ", id=" + id +
+                ", genero='" + genero + '\'' +
                 '}';
     }
 }
