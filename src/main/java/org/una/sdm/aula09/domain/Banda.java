@@ -9,8 +9,8 @@ import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Objects;
 
-    @Entity
-    public class Banda implements Serializable {
+@Entity
+public class Banda implements Serializable {
 
     @Id
     @GeneratedValue(generator = "increment")
@@ -21,6 +21,7 @@ import java.util.Objects;
 
     private int anoDeFormacao;
 
+    private String genero;
 
     public String getNome() {
         return nome;
@@ -45,6 +46,14 @@ import java.util.Objects;
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 
     @Override
